@@ -14,7 +14,7 @@ class MontageInput extends React.Component {
     }
     onChange = (e) => {
         let value = e.target.value;
-        this.setState({ value });
+        this.setState({ value,montages: this.createMontage(this.state.value) });
     }
     onClick = () => {
         this.setState({ montages: this.createMontage(this.state.value) })

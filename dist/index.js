@@ -19532,7 +19532,7 @@ var MontageInput = function (_React$Component) {
 
         _this.onChange = function (e) {
             var value = e.target.value;
-            _this.setState({ value: value });
+            _this.setState({ value: value, montages: _this.createMontage(_this.state.value) });
         };
 
         _this.onClick = function () {
